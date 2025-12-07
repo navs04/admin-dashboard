@@ -214,7 +214,19 @@ ul>li{
 }
 
 .trending-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: white;
     border-radius: 0.5rem;
     padding: 2rem;
+}
+
+.trending-text p:nth-child(2){
+    color: grey;
+    margin-top: 0;
+}
+
+.trending-text p:nth-child(1){
+    margin-bottom: 0;
 }
