@@ -1,7 +1,7 @@
 body{
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1fr 5.5fr;
 }
 
 .sidebar>div{
@@ -126,7 +126,7 @@ ul>li{
     grid-column: 2/3;
     grid-row: 2/3;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr;
 }
 
 .projects{
@@ -135,7 +135,7 @@ ul>li{
     grid-row: 1/3;
 }
 
-.project-heading{
+.project-heading, .announcements-heading, .trending-heading{
     font-size: 1.2rem;
     font-weight: 800;
 }
@@ -154,15 +154,18 @@ ul>li{
 
 .project-card{
     background-color: white;
+    color: grey;
+    width: 25rem;
+    font-size: 1.1rem;
     padding: 1.5rem;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     border-left: 0.5rem solid sandybrown;
 }
 
 .project-card-heading{
+    color: black;
     font-size: 1.2rem;
     font-weight: 800;
-    margin-bottom: 0.2rem;
 }
 
 .project-card-icons{
@@ -172,11 +175,46 @@ ul>li{
 }
 
 .announcements{
+    padding: 1rem;
     grid-column: 2/3;
     grid-row: 1/2;
 }
 
+.announcements-card{
+    background-color: white;
+    color: grey;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    font-size: 0.9rem;
+}
+
+.announcements-card-heading{
+    color: black;
+    font-size: 1rem;
+    font-weight: 800;
+    margin-bottom: 0.2rem;
+}
+
+
 .trending{
+    padding: 1rem;
     grid-column: 2/3;
     grid-row: 2/3;
+}
+
+.trending-profile img{
+    width: 3rem;
+    height: 3rem;
+}
+
+.trending-profile{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.trending-card{
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 2rem;
 }
